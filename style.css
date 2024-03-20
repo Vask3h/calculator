@@ -1,0 +1,78 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+.mainBox{
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    padding: 15px;  
+    flex-direction: column;
+    gap: 15px;
+    border: 5px solid navy
+}
+.screen{
+    background-color: snow;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    font-size: 30px;
+    border: 5px solid grey;
+    border-radius: 5px;
+}
+
+.secondBox{
+    background-color: brown;
+    display:flex;
+    
+    
+}
+.numbers{
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    
+
+}
+.numbersSeconds{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.numbersSpecial{
+    display: flex;
+    gap:10px;
+    padding-top: 10px;
+}
+button{
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.bigButton{
+    width: 110px;
+}
+.bigButton2{
+    height:  110px;
+}
+.operations{
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    gap: 10px;
+}
+.operationsSeconds{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.operationsSpecial{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
