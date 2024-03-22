@@ -33,10 +33,6 @@ function onClickButton(param1 ) { //pasar parametro a la funcion
 }
     
     
-    /*if (myOp != "") { //si variable op no esta vacia
-        myNum2 = myNum2 + param1 // num2 = num2 +parm
-        MY_SCREEN.innerHTML = myNum2 
-    }*/
  
 };
 
@@ -56,7 +52,7 @@ function equalButton(){
     }
     
     
-    MY_SCREEN.innerHTML = myResult 
+    MY_SCREEN.innerHTML = parseFloat(myResult.toFixed(2)) 
 }
 
 
@@ -73,7 +69,23 @@ function clearScreen(){ /* limpia pantalla */
     myResult = "";
 };
 
+function onClickButtonBack(param2){
+    const MY_SCREEN = document.getElementById('screen');
+ if (param2 == "10") {
+    if (myOp == "") {
+        myNum = myNum.slice(0, -1);
+        MY_SCREEN.innerHTML = myNum;
+    } if(myNum == ""){
+        MY_SCREEN.innerHTML = "0";
 
+    }
+    else{
+        myNum2 = myNum2.slice(0, -1);
+        MY_SCREEN.innerHTML = myNum;
+    }
+ }
+
+};
 
 /*    console.log(myNum + " Este es mi numero");
     console.log(myNum2+ " Este en mi numero2");
