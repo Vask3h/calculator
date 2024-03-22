@@ -69,9 +69,9 @@ function clearScreen(){ /* limpia pantalla */
     myResult = "";
 };
 
-function onClickButtonBack(param2){
+function onClickButtonBack(){
     const MY_SCREEN = document.getElementById('screen');
- if (param2 == "10") {
+
     if (myOp == "") {
         myNum = myNum.slice(0, -1);
         MY_SCREEN.innerHTML = myNum;
@@ -83,7 +83,7 @@ function onClickButtonBack(param2){
         myNum2 = myNum2.slice(0, -1);
         MY_SCREEN.innerHTML = myNum;
     }
- }
+ 
 
 };
 
