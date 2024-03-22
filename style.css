@@ -6,7 +6,7 @@ body{
     align-items: center;
     background-color: #a3a7aa;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    overflow: hidden;
 }
 .name{
     width: 100%;

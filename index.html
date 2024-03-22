@@ -4,31 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
     <title>Calculator</title>
 </head>
 <body>
+    
     <div class="mainBox">
         <div>
             <p class="name">Daniel Vázquez Aires</p>
             <div class="screen">
-                <p>0</p>
+                <p id="screen">0</p>
             </div>
         </div>
         <div class="secondBox"> 
             <div class="numbers">
                 <div class="numbersSeconds">
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
+                    <button onclick="onClickButton(7)">7</button>
+                    <button onclick="onClickButton(8)">8</button>
+                    <button onclick="onClickButton(9)">9</button>
+                    <button onclick="onClickButton(4)">4</button>
+                    <button onclick="onClickButton(5)">5</button>
+                    <button onclick="onClickButton(6)">6</button>
+                    <button onclick="onClickButton(1)">1</button>
+                    <button onclick="onClickButton(2)">2</button>
+                    <button onclick="onClickButton(3)">3</button>
                 </div>
                 <div class="numbersSpecial">
-                    <button class="bigButton" >0</button>
+                    <button onclick="onClickButton(0)" class="bigButton" >0</button>
                     <button>.</button>
                 </div>
             </div>
@@ -36,15 +38,15 @@
 
             <div class="operations">
                 <div class="operationsSeconds">
-                    <button class="clearButton">C</button>
-                    <button>X</button>
-                    <button>-</button>
-                    <button>+</button>
+                    <button onclick="clearScreen()" class="clearButton">C</button>
+                    <button onclick="onClickButton('*')">X</button>
+                    <button onclick="onClickButton('-')">-</button>
+                    <button onclick="onClickButton('+')">+</button>
                 </div>
                 <div class="operationsSpecial">
                     <button>⭢</button>
-                    <button>÷</button>
-                    <button class="equalButton">=</button>
+                    <button onclick="onClickButton('/')" >÷</button>
+                    <button onclick="equalButton()"class="equalButton">=</button>
 
                 </div>
             </div>
