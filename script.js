@@ -23,14 +23,13 @@ function onClickButton(param1 ) { //pasar parametro a la funcion
         MY_SCREEN.innerHTML = myOp //muestro en pantalla variable myOp
     }else {
         if(myOp == "") { //comprobar si op esta vacio
-        myNum = myNum + param1 // si si mi numero sera mi numero + el parametro
-        MY_SCREEN.innerHTML = myNum // enseño en mi pantalla mi numero
+            myNum = myNum + param1 // si si mi numero sera mi numero + el parametro
+            MY_SCREEN.innerHTML = myNum // enseño en mi pantalla mi numero
+        }else{
+            myNum2 = myNum2 +param1
+            MY_SCREEN.innerHTML = myNum2
         }
-        else{
-        myNum2 = myNum2 +param1
-        MY_SCREEN.innerHTML = myNum2
-        }
-}
+    }
     
     
  
@@ -75,22 +74,23 @@ function onClickButtonBack(){
     if (myOp == "") {
         myNum = myNum.slice(0, -1);
         MY_SCREEN.innerHTML = myNum;
-    } if(myNum == ""){
-        MY_SCREEN.innerHTML = "0";
-
-    }
+    } 
     else{
         myNum2 = myNum2.slice(0, -1);
         MY_SCREEN.innerHTML = myNum;
+    }
+      
+    if(myNum == ""){
+        MY_SCREEN.innerHTML = "0";
     }
  
 
 };
 
-/*    console.log(myNum + " Este es mi numero");
-    console.log(myNum2+ " Este en mi numero2");
-    console.log(myOp +" Este es mi operador");
-    console.log(myResult + " Este es mi resultado"); */
+/*    console.log(myNum )
+        console.log(myNum2)
+        console.log(myOp)
+ */
 
 
  
